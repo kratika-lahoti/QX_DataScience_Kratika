@@ -1,9 +1,0 @@
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-%matplotlib inline
-import scipy.stats as stas
-z_critical=stats.norm.ppf(q=0.975)
-t_critical=stats.t.ppf(q=0.975,df=24)
-margin_of_error=z_critical*(np.std(estimates)/np.sqrt(200))
-np.mean(estimates)-margin_of_error
